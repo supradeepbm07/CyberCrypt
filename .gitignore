@@ -1,6 +1,7 @@
 target/
 uploads/
 data/
+.env
 .idea/
 .vscode/
 *.log
