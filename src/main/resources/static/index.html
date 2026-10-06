@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#071329">
+  <title>CyberCrypt | Cyber Crime Management</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="page-glow glow-one"></div>
+<div class="page-glow glow-two"></div>
+
+<header class="site-header">
+  <div class="brand">
+    <div class="logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" role="img"><path d="M12 2 4.8 5v5.2c0 5 3 9.5 7.2 11.8 4.2-2.3 7.2-6.8 7.2-11.8V5L12 2Zm0 2.2 5.1 2.1v3.9c0 3.8-2 7.4-5.1 9.5-3.1-2.1-5.1-5.7-5.1-9.5V6.3L12 4.2Zm-.9 4.1v2H9v2h2.1v3.2h2v-3.2h2.1v-2h-2.1v-2h-2Z"/></svg>
+    </div>
+    <div class="brand-copy">
+      <h1>CyberCrypt</h1>
+      <span>Cyber Crime Reporting & Digital Evidence Protection</span>
+    </div>
+  </div>
+  <nav aria-label="Primary navigation">
+    <button onclick="showTab('report')"><span class="nav-dot"></span>Report Crime</button>
+    <button onclick="showTab('track')"><span class="nav-dot"></span>Track Case</button>
+    <button onclick="showTab('login')"><span class="nav-dot"></span>Investigator Login</button>
+    <button onclick="showTab('admin')"><span class="nav-dot"></span>Dashboard</button>
+  </nav>
+</header>
+
+<main>
+  <section id="report" class="tab">
+    <div class="hero">
+      <div class="hero-copy">
+        <div class="security-label"><span class="pulse-dot"></span> SECURE DIGITAL REPORTING PORTAL</div>
+        <h2>Report cyber crime. Preserve evidence. Protect the investigation.</h2>
+        <p>CyberCrypt provides a secure, evidence-centric workflow for cyber crime complaints with automated priority scoring, SHA-256 evidence fingerprints and complete chain-of-custody records.</p>
+        <div class="hero-actions">
+          <a class="primary action-link" href="#caseForm">Register a Complaint</a>
+          <button class="ghost" onclick="showTab('track')">Track Existing Case</button>
+        </div>
+        <div class="trust-row">
+          <span>✓ SHA-256 Integrity</span>
+          <span>✓ Risk Prioritization</span>
+          <span>✓ Custody Audit Trail</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="shield-orbit orbit-one"></div>
+        <div class="shield-orbit orbit-two"></div>
+        <div class="shield-core">
+          <svg viewBox="0 0 24 24"><path d="M12 2 4.5 5.1v5.4c0 5.1 3 9.4 7.5 11.5 4.5-2.1 7.5-6.4 7.5-11.5V5.1L12 2Zm0 2.3 5.3 2.2v4c0 3.9-2.1 7.4-5.3 9.2-3.2-1.8-5.3-5.3-5.3-9.2v-4L12 4.3Zm-1 4.1h2v3h2.8v2H13v2.9h-2v-2.9H8.2v-2H11v-3Z"/></svg>
+        </div>
+        <div class="risk-card"><span>RISK ENGINE</span><strong>0–100</strong><small>Automated priority score</small></div>
+      </div>
+    </div>
+
+    <div class="feature-strip" aria-label="CyberCrypt workflow features">
+      <div class="feature-item"><div class="feature-icon">01</div><div><b>Submit Complaint</b><span>Structured incident reporting</span></div></div>
+      <div class="feature-item"><div class="feature-icon">02</div><div><b>Secure Evidence</b><span>SHA-256 digital fingerprints</span></div></div>
+      <div class="feature-item"><div class="feature-icon">03</div><div><b>Track Progress</b><span>Unique anonymous tracking ID</span></div></div>
+      <div class="feature-item"><div class="feature-icon">04</div><div><b>Audit Actions</b><span>Chain-of-custody timeline</span></div></div>
+    </div>
+
+    <section class="project-overview" aria-label="Project overview">
+      <div class="overview-main">
+        <p class="eyebrow">PROJECT OVERVIEW</p>
+        <h3>CyberCrypt — Cyber Crime Complaint & Digital Evidence Management System</h3>
+        <p>A Java-based academic prototype that centralizes cyber crime reporting, automated risk prioritization, secure evidence handling and investigator workflows in one auditable platform.</p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-card"><span class="overview-kicker">CORE SECURITY</span><b>SHA-256 Evidence Integrity</b><small>Uploaded evidence receives a cryptographic fingerprint so later changes can be detected.</small></div>
+        <div class="overview-card"><span class="overview-kicker">SMART WORKFLOW</span><b>Risk-Based Prioritization</b><small>Incident type, financial loss and emergency keywords contribute to a 0–100 risk score.</small></div>
+        <div class="overview-card"><span class="overview-kicker">AUDITABILITY</span><b>Chain of Custody</b><small>Important case and evidence actions are recorded in a hash-linked investigation history.</small></div>
+        <div class="overview-card tech-card"><span class="overview-kicker">TECH STACK</span><b>Java • Spring Boot • H2 • HTML • CSS • JavaScript</b><small>Designed as a complete full-stack project for secure complaint and evidence management.</small></div>
+      </div>
+    </section>
+
+    <form id="caseForm" class="card form-card">
+      <div class="section-heading">
+        <div><p class="eyebrow">COMPLAINT INTAKE</p><h3>Complaint Registration</h3><p>Provide accurate details about the incident. Fields can be submitted anonymously when required.</p></div>
+        <div class="secure-badge">🔒 Protected Submission</div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title"><span>1</span><div><b>Reporter Information</b><small>Basic contact details for follow-up</small></div></div>
+        <div class="grid2">
+          <label>Reporter Name<input name="reporterName" placeholder="Enter your full name" autocomplete="name"></label>
+          <label>Email Address<input name="reporterEmail" type="email" placeholder="name@example.com" autocomplete="email"></label>
+          <label>Phone Number<input name="phone" placeholder="+91 XXXXX XXXXX" autocomplete="tel"></label>
+          <label class="check anonymous-check"><input name="anonymous" type="checkbox"><span><b>Submit Anonymously</b><small>Your identity will not be displayed in case tracking.</small></span></label>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-title"><span>2</span><div><b>Incident Details</b><small>Information used for risk assessment and investigation</small></div></div>
+        <div class="grid2">
+          <label>Crime Type<select name="crimeType">
+            <option>Financial Fraud</option><option>Phishing</option><option>Identity Theft</option>
+            <option>Account Hacking</option><option>Ransomware</option><option>Cyber Harassment</option><option>Other</option>
+          </select></label>
+          <label>Estimated Financial Loss (₹)<input name="financialLoss" type="number" min="0" step="1" value="0"></label>
+        </div>
+        <label>Incident Description<textarea name="description" rows="7" required placeholder="Describe what happened, relevant dates, suspicious messages, URLs, transaction details, threats or any other useful information..."></textarea></label>
+      </div>
+
+      <div class="submit-row">
+        <div class="privacy-note"><b>Evidence-ready workflow</b><span>You can upload digital evidence securely after registration.</span></div>
+        <button class="primary submit-btn" type="submit">Register Complaint <span>→</span></button>
+      </div>
+    </form>
+    <div id="reportResult"></div>
+  </section>
+
+  <section id="track" class="tab hidden">
+    <div class="page-intro">
+      <p class="eyebrow">CASE STATUS</p>
+      <h2>Track Your Complaint</h2>
+      <p>Enter the secure tracking ID generated during complaint registration to view status, risk priority, assigned investigator and evidence records.</p>
+    </div>
+    <div class="card lookup-card">
+      <div class="lookup-icon">⌕</div>
+      <div class="lookup-content">
+        <h3>Secure Case Lookup</h3>
+        <p>Tracking IDs follow the format <b>CC-2026-123456</b>.</p>
+        <div class="search"><input id="trackId" placeholder="Enter tracking ID"><button class="primary" onclick="trackCase()">Track Case</button></div>
+        <small class="helper-text">Your tracking ID can be used without revealing your identity.</small>
+        <div class="demo-shortcut"><span>Project review sample:</span><button type="button" onclick="openTrack('CC-2026-DEMO01')">Open CC-2026-DEMO01</button></div>
+      </div>
+    </div>
+    <div id="trackResult"></div>
+  </section>
+
+  <section id="login" class="tab hidden">
+    <div class="auth-layout">
+      <div class="auth-copy">
+        <p class="eyebrow">AUTHORIZED ACCESS</p>
+        <h2>Investigator Portal</h2>
+        <p>Restricted access for cyber crime investigators. OTP verification provides an additional authentication step before case administration.</p>
+        <div class="auth-points"><span>✓ Investigator-only workspace</span><span>✓ Evidence integrity verification</span><span>✓ Case action audit trail</span></div>
+      </div>
+      <div class="card login-card">
+        <div class="lock-mark">🔐</div>
+        <h3>Secure OTP Login</h3>
+        <p class="muted">Enter an officer phone number or email to request the demonstration OTP.</p>
+        <label>Officer Contact</label>
+        <div class="search"><input id="otpDestination" placeholder="Phone number or email"><button class="primary" onclick="requestOtp()">Send OTP</button></div>
+        <label>Verification Code</label>
+        <div class="search"><input id="otpValue" inputmode="numeric" placeholder="6-digit OTP"><button onclick="verifyOtp()">Verify</button></div>
+        <p id="otpMessage" class="otp-message"></p>
+        <div class="demo-note"><b>Project Demo Mode</b><span>Production deployment should connect an approved SMS or email OTP provider.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="admin" class="tab hidden">
+    <div class="toolbar dashboard-toolbar">
+      <div><p class="eyebrow">INVESTIGATOR WORKSPACE</p><h2>Case Intelligence Dashboard</h2><p>Prioritized view of reported incidents, evidence status and investigation activity.</p></div>
+      <button class="refresh-btn" onclick="loadCases()">↻ Refresh Cases</button>
+    </div>
+    <div class="dashboard-banner"><span class="live-dot"></span><b>Priority-based case queue</b><span>Cases are ordered by automated cyber risk score for faster investigator attention.</span></div>
+    <div id="dashboardStats" class="dashboard-stats" aria-label="Case summary"></div>
+    <div id="caseList" class="case-list"></div>
+    <div id="caseDetail"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-brand"><span class="footer-mark">CC</span><div><b>CyberCrypt</b><span>Evidence-centric cyber crime management workflow</span></div></div>
+  <div>Java Programming Project • Secure Reporting • Evidence Integrity • Case Tracking</div>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>
